@@ -11,12 +11,21 @@ import BoxRightComponent from "../elements/BoxRightComponent";
 
 import { ALEM } from "../../assets/data/imagesInfo";
 
+const Space = styled.div`
+
+  margin-top: 2rem;
+
+  @media (max-width: 64em){
+    margin-top: 0rem;
+  }
+
+`;
+
 const Alem = () => {
   return (
     <SectionComponent id="alem">
       <TitleComponent>Além do Brejos Faria</TitleComponent>
-      <br></br>
-      <br></br>
+      <Space />
       <ContainerComponent>
         <BoxLeftComponent>
           <Accordion title="Integração no bairro">

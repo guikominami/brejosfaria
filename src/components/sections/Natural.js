@@ -20,13 +20,9 @@ const Box = styled.div`
   flex-direction: column;
 
   @media (max-width: 64em) {
-    width: 90%;
+    width: 100%;
     align-self: center;
-  }
-
-  @media (max-width: 48em) {
-    width: 90%;
-    flex-direction: column;
+    flex-direction: column;    
   }
 `;
 
@@ -39,13 +35,6 @@ const SubTitle = styled.h2`
 
   @media (max-width: 64em) {
     width: 100%;
-    text-align: center;
-  }
-  @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontxl};
-  }
-  @media (max-width: 30em) {
-    font-size: ${(props) => props.theme.fontlg};
   }
 `;
 
@@ -59,17 +48,8 @@ const SubText = styled.p`
 
   @media (max-width: 64em) {
     width: 100%;
-    text-align: center;
-    font-size: ${(props) => props.theme.fontmd};
   }
 
-  @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontmd};
-  }
-
-  @media (max-width: 30em) {
-    font-size: ${(props) => props.theme.fontsm};
-  }
 `;
 
 const Natural = () => {

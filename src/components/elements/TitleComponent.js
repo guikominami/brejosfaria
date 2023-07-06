@@ -9,7 +9,8 @@ const Title = styled.h1`
   margin: 1rem auto;
   border-bottom: 2px solid ${(props) => props.theme.text};
 
-  @media (max-width: 48em) {
+  @media (max-width: 64em) {
+    margin-top: 2rem;
     font-size: ${(props) => props.theme.fontxl};
   }
 `;

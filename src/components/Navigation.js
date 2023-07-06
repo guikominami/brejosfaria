@@ -58,11 +58,7 @@ const Logo = styled.div`
     bottom: 100%;
     width: 90%; 
   }
-
-  @media (max-width: 48em){
-    right: 1rem;
-    margin-left: 0; 
-  } */
+*/
 `;
 
 const Menu = styled.ul`
@@ -74,6 +70,9 @@ const Menu = styled.ul`
   color: ${(props) => props.colorItem};
 
   @media (max-width: 64em){
+
+    color: ${(props) => props.theme.text};
+
     /* 1024 px  */
     position: fixed;
     top: ${props => props.theme.navHeight};
@@ -93,6 +92,8 @@ const Menu = styled.ul`
     justify-content: center;
 
     touch-action: none;
+
+    margin-right: 0rem;
   }   
 `;
 
@@ -102,17 +103,19 @@ const MenuItem = styled.li`
   font-size: ${(props) => props.theme.fontlg};
   font-weight: 500;
   text-transform: uppercase;
+  text-align: center;
 
   cursor: pointer;
   //para evitar de quebrar a palavra Quem Somos
-  width: auto;
+  //width: auto;
 
   &::after{
     content: ' ';
     display: block;
     width: 0%;
     height: 2px;
-    background: ${props => props.theme.text};
+    //background: ${props => props.theme.text};
+    background: ${props => props.colorItem};
     transition: width 0.3s ease;
   }
 
@@ -132,7 +135,7 @@ const MenuItem = styled.li`
 const HamburgerMenu = styled.span`
   width: ${props => props.click ? '2rem' : '1.5rem'};
   height: 2px;
-  background: ${props => props.theme.text};
+  background: ${props => props.colorItem};
 
   position: absolute;
   top: 2rem;
@@ -156,7 +159,7 @@ const HamburgerMenu = styled.span`
     width: ${props => props.click ? '1rem' : '1.5rem'};
     height: 2px;
     right: ${props => props.click ? '-2px' : '0'};
-    background: ${props => props.theme.text};
+    background: ${props => props.colorItem};
     position: absolute;
     transition: all 0.3s ease;
   }
@@ -215,17 +218,17 @@ const Navigation = () => {
           <img src={logo} alt="logo com descrição MudaLab" />
           <Link to="/" />        
         </Logo>
-        <HamburgerMenu click={click} onClick={() => setClick(!click)}>
+        <HamburgerMenu colorItem={menuColor} click={click} onClick={() => setClick(!click)}>
           &nbsp;
         </HamburgerMenu>        
         <Menu click={click} colorItem={menuColor}>
-          <MenuItem onClick={() => scrolTo("capa-foto")}>Home</MenuItem>
-          <MenuItem onClick={() => scrolTo("capa")}>Nós</MenuItem>
-          <MenuItem onClick={() => scrolTo("coabitacao")}>Habitação colaborativa</MenuItem>
-          <MenuItem onClick={() => scrolTo("pessoas")}>PESSOAS</MenuItem>
-          <MenuItem onClick={() => scrolTo("alem")}>Comunidade</MenuItem>
-          <MenuItem onClick={() => scrolTo("ambiente")}>AMBIENTE</MenuItem>
-          <MenuItem onClick={() => scrolTo("natural")}>NATURAL</MenuItem>
+          <MenuItem colorItem={menuColor} onClick={() => scrolTo("capa-foto")}>Home</MenuItem>
+          <MenuItem colorItem={menuColor} onClick={() => scrolTo("capa")}>Nós</MenuItem>
+          <MenuItem colorItem={menuColor} onClick={() => scrolTo("coabitacao")}>Habitação colaborativa</MenuItem>
+          <MenuItem colorItem={menuColor} onClick={() => scrolTo("pessoas")}>PESSOAS</MenuItem>
+          <MenuItem colorItem={menuColor} onClick={() => scrolTo("alem")}>Comunidade</MenuItem>
+          <MenuItem colorItem={menuColor} onClick={() => scrolTo("ambiente")}>AMBIENTE</MenuItem>
+          <MenuItem colorItem={menuColor} onClick={() => scrolTo("natural")}>NATURAL</MenuItem>
         </Menu>
       </NavBar>
     </Section>    

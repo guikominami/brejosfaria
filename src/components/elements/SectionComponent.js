@@ -16,6 +16,10 @@ const Section = styled.section`
   flex-direction: column;
 
   box-shadow: 0.125rem 0.125rem 0.25rem 0.25rem rgb(0 0 0 / 10%);  
+
+  @media (max-width: 64em) {
+    min-height: 60vh;
+  }  
 `;
 
 const SectionComponent = (props) => {

@@ -1,15 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.d6ab82a3.css",
-    "main.js": "/static/js/main.75fa6ff6.js",
+    "main.js": "/static/js/main.6115f032.js",
     "static/js/787.88457ee2.chunk.js": "/static/js/787.88457ee2.chunk.js",
     "static/media/alem3.jpg": "/static/media/alem3.cf893d8c90d88cd73181.jpg",
     "static/media/pessoas.mp4": "/static/media/pessoas.ea8f5c67a3e8cb94a2c8.mp4",
     "static/media/alem2.jpg": "/static/media/alem2.c894234a9f82016fa9ef.jpg",
     "static/media/alem4.jpg": "/static/media/alem4.15304f8540d6b9730144.jpg",
+    "static/media/capa5.jpg": "/static/media/capa5.cfd00a27990e58bad475.jpg",
     "static/media/capa.jpg": "/static/media/capa.206d1d0b99d69d3b56f7.jpg",
+    "static/media/capa2.jpg": "/static/media/capa2.370a79a1e9e5ed8f415b.jpg",
+    "static/media/capaMobile.jpg": "/static/media/capaMobile.31345188a821ec5c56ef.jpg",
     "static/media/natural1.jpg": "/static/media/natural1.fe529268263d09073007.jpg",
-    "static/media/capaMobile.jpg": "/static/media/capaMobile.30183dfaeec43152602d.jpg",
     "static/media/natural3.jpg": "/static/media/natural3.7d0df8387112b35fd5d3.jpg",
     "static/media/ambiente.jpg": "/static/media/ambiente.a76d61ccf4ef320bd8a7.jpg",
     "static/media/natural4.jpg": "/static/media/natural4.179db7aae189f9841384.jpg",
@@ -19,8 +21,9 @@
     "static/media/natural2.jpg": "/static/media/natural2.31f9a374a491f7100bb0.jpg",
     "static/media/capa1.jpg": "/static/media/capa1.e084bdebbf1f8ad6cf36.jpg",
     "static/media/alem1.jpg": "/static/media/alem1.42e24a4bb03f96e93290.jpg",
+    "static/media/capa4.jpg": "/static/media/capa4.468e9313429fdb76eb14.jpg",
     "static/media/akaya-telivigala-all-400-normal.woff": "/static/media/akaya-telivigala-all-400-normal.78fd8cb2a221beeb77ce.woff",
-    "static/media/capa2.jpg": "/static/media/capa2.0ee6ee430f8135fa6a78.jpg",
+    "static/media/capa6.jpg": "/static/media/capa6.ca80e2cf8d844b052097.jpg",
     "static/media/akaya-telivigala-telugu-400-normal.woff2": "/static/media/akaya-telivigala-telugu-400-normal.cc24af700d82d6ced8f6.woff2",
     "static/media/capa3.jpg": "/static/media/capa3.a7f9de7f01914de29170.jpg",
     "static/media/poppins-devanagari-400-normal.woff": "/static/media/poppins-devanagari-400-normal.0e11b62db931f85340d4.woff",
@@ -41,11 +44,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.653fd0bacb20c2c547a267304ef93697.svg",
     "main.d6ab82a3.css.map": "/static/css/main.d6ab82a3.css.map",
-    "main.75fa6ff6.js.map": "/static/js/main.75fa6ff6.js.map",
+    "main.6115f032.js.map": "/static/js/main.6115f032.js.map",
     "787.88457ee2.chunk.js.map": "/static/js/787.88457ee2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6ab82a3.css",
-    "static/js/main.75fa6ff6.js"
+    "static/js/main.6115f032.js"
   ]
 }

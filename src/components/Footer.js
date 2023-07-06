@@ -85,7 +85,7 @@ const Footer = () => {
           <img src={logo} />
         </Logo>      
         <IconList>
-          <a href="https://www.instagram.com/labmudalab" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/brejos_faria_hab_colaborativa" target="_blank" rel="noreferrer">
             <Instagram />
           </a>
           <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">

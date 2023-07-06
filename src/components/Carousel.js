@@ -14,21 +14,13 @@ import arrow from "../assets/icons/arrow.svg";
 const Container = styled.div`
 
   width:${props => props.isBigSize ? "60vw": "40vw"};
-  height:${props => props.isBigSize ? "85vh" : "60vh"};
-
-  //width: ${props => props.width};
-  //height: ${props => props.height};
-  //width: 40vw;
-  //height: 60vh;
+  height:${props => props.isBigSize ? "85vh" : "62vh"};
 
   @media (max-width: 64em) {
-    height: 50vh;
-    width: 30vw;
-  }
-
-  @media (max-width: 48em) {
-    height: 40vh;
-    width: 80vw;
+    width:${props => props.isBigSize ? "90vw": "80vw"};
+    height:${props => props.isBigSize ? "55vh" : "30vh"};
+    
+    margin-bottom:${props => props.isBigSize ? "2rem": "0rem"};
   }
 
   .swiper {
@@ -73,11 +65,8 @@ const Container = styled.div`
 
     @media (max-width: 64em) {
       width: 3rem;
-      top: 35%;
-    }
 
-    @media (max-width: 30em) {
-      width: 2rem;
+      top:${props => props.isBigSize ? "25%": "40%"};
     }
   }
 
@@ -96,27 +85,15 @@ const Container = styled.div`
 
     @media (max-width: 64em) {
       width: 3rem;
-      top: 35%;
-    }
-
-    @media (max-width: 30em) {
-      width: 2rem;
+      top:${props => props.isBigSize ? "25%": "40%"};
     }
   }
 `;
 
 const TextContainer = styled.div`
-  //width: 50vw;
-  //height: 15vh;
   font-size: ${(props) => props.theme.fontlg};
-  //font-style: italic;
 
   margin-bottom: 3rem;
-
-  @media (max-width: 64em) {
-    font-size: ${(props) => props.theme.fontlg};
-    margin-bottom: 3rem;
-  }  
 `;
 
 const Carousel = ({
@@ -128,7 +105,6 @@ const Carousel = ({
 }) => {
 
   return (
-    //<Container width={widthProp} height={heightProp}>
     <Container isBigSize={bigSize}>
       <Swiper
         slidesPerView={1}

@@ -11,6 +11,18 @@ export const CAPA = [
     id: 3,
     image: require("../../assets/fotos/capa3.jpg"),
   },
+  {
+    id: 4,
+    image: require("../../assets/fotos/capa4.jpg"),
+  },
+  {
+    id: 5,
+    image: require("../../assets/fotos/capa5.jpg"),
+  },
+  {
+    id: 6,
+    image: require("../../assets/fotos/capa6.jpg"),
+  },    
 ];
 
 export const ALEM = [

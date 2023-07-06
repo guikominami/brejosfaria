@@ -12,37 +12,23 @@ import BoxRightComponent from "../elements/BoxRightComponent";
 
 import video_pessoas from "../../assets/fotos/pessoas.mp4";
 
-const BoxLeft = styled.div`
-  width: 50%;
+const VideoContainerDesktop = styled.div`
 
-  margin-left: 4rem;
-  margin-right: 4rem;
+  display: flex;
 
   @media (max-width: 64em) {
-    width: 90%;
-    align-self: center;
-  }
-
-  @media (max-width: 48em) {
-    width: 90%;
-    flex-direction: column;
+    display: none;
   }
 `;
 
-const BoxRight = styled.div`
-  width: 50%;
+const VideoContainerMobile = styled.div`
 
-  margin-top: 1rem;
+  display: none;
 
   @media (max-width: 64em) {
-    width: 90%;
-    align-self: center;
-  }
+    display: flex;
 
-  @media (max-width: 48em) {
-    width: 100%;
-    align-self: center;
-    margin-left: 3rem;
+    margin-bottom: 2rem;
   }
 `;
 
@@ -282,7 +268,12 @@ const Pessoas = () => {
           </Accordion>
         </BoxLeftComponent>
         <BoxRightComponent>
-          <ReactPlayer url={video_pessoas} controls={true} width="500px" />
+          <VideoContainerDesktop>
+            <ReactPlayer url={video_pessoas} controls={true} width="500px"/>
+          </VideoContainerDesktop>
+          <VideoContainerMobile>
+            <ReactPlayer url={video_pessoas} controls={true} width="300px" height="200px" />
+          </VideoContainerMobile>
         </BoxRightComponent>
       </ContainerComponent>
     </SectionComponent>

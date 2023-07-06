@@ -10,6 +10,11 @@ const Section = styled.section`
   //height: 110vh;
   position: relative;
   background-color: ${(props) => props.theme.text};
+
+  @media (max-width: 64em) {
+    height: 90vh;
+   background-color: ${(props) => props.theme.body};
+  }  
 `;
 
 const Container = styled.div`
