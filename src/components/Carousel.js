@@ -17,8 +17,8 @@ const Container = styled.div`
   height:${props => props.isBigSize ? "85vh" : "62vh"};
 
   @media (max-width: 64em) {
-    width:${props => props.isBigSize ? "90vw": "80vw"};
-    height:${props => props.isBigSize ? "55vh" : "30vh"};
+    width:${props => props.isBigSize ? "90vw": "90vw"};
+    height:${props => props.isBigSize ? "65vh" : "35vh"};
     
     margin-bottom:${props => props.isBigSize ? "2rem": "0rem"};
   }

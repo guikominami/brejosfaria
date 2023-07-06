@@ -4,7 +4,7 @@ import Accordion from "../Accordion";
 import SectionComponent from "../elements/SectionComponent";
 import ContainerComponent from "../elements/ContainerComponent";
 import TitleComponent from "../elements/TitleComponent";
-
+//import TimeLineComp from "../TimelineComp";
 import imagemAmbiente from "../../assets/fotos/ambiente.jpg";
 
 const Box = styled.div`
@@ -14,12 +14,8 @@ const Box = styled.div`
   margin-right: 4rem;
 
   @media (max-width: 64em) {
-    width: 90%;
+    width: 100%;
     align-self: center;
-  }
-
-  @media (max-width: 48em) {
-    width: 90%;
     flex-direction: column;
   }
 `;
@@ -171,7 +167,8 @@ const Ambiente = () => {
           </Accordion>
           <ImageContainer>
             <img src={imagemAmbiente}></img>
-          </ImageContainer>          
+          </ImageContainer>
+{/*           <TimeLineComp /> */}
         </Box>
       </ContainerComponent>
     </SectionComponent>

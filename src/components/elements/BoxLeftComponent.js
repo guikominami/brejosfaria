@@ -9,12 +9,11 @@ const BoxLeft = styled.div`
   margin-right: 4rem;
 
   @media (max-width: 64em) {
-    width: 90%;
-    align-self: center;
-  }
+    margin-left: 2rem;
+    margin-right: 2rem;
 
-  @media (max-width: 48em) {
-    width: 90%;
+    width: 100%;
+    align-self: center;
     flex-direction: column;
   }
 `;

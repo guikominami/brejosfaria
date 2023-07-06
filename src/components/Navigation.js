@@ -50,15 +50,9 @@ const Logo = styled.div`
     height: auto;
   }
 
-/*   @media (max-width: 64em){
-    width: 4rem;
-    height: 4rem;
-    left: none;
-    right: 2rem;
-    bottom: 100%;
-    width: 90%; 
+  @media (max-width: 64em){
+    margin-top: 0.5rem;
   }
-*/
 `;
 
 const Menu = styled.ul`

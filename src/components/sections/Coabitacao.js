@@ -11,7 +11,7 @@ const Box = styled.div`
   width: 80%;
 
   @media (max-width: 64em) {
-    width: 90%;
+    width: 100%;
     align-self: center;
     flex-direction: column;
   }

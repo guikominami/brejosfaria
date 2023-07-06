@@ -8,10 +8,10 @@ const BoxRight = styled.div`
   margin-right: 2rem;
 
   @media (max-width: 64em) {
-    width: 90%;
+    width: 100%;
     align-self: center;
-    margin-left: 3rem;
-    margin-right: 3rem;    
+    margin-left: 1rem;
+    margin-right: 1rem;    
   }
 
 `;

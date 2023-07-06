@@ -52,6 +52,7 @@ const Indicator = styled.span`
   }
 
   @media (max-width: 48em){
+    margin-left: 1rem;
     font-size: ${props => props.theme.fontxl};
   }  
 `

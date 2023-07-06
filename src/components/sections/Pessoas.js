@@ -27,7 +27,7 @@ const VideoContainerMobile = styled.div`
 
   @media (max-width: 64em) {
     display: flex;
-
+    margin-top: 1rem;
     margin-bottom: 2rem;
   }
 `;
@@ -272,7 +272,7 @@ const Pessoas = () => {
             <ReactPlayer url={video_pessoas} controls={true} width="500px"/>
           </VideoContainerDesktop>
           <VideoContainerMobile>
-            <ReactPlayer url={video_pessoas} controls={true} width="300px" height="200px" />
+            <ReactPlayer url={video_pessoas} controls={true} width="350px" height="200px" />
           </VideoContainerMobile>
         </BoxRightComponent>
       </ContainerComponent>
